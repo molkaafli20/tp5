@@ -1,0 +1,10 @@
+<div class="border p-2">
+  <h3>Liste des Pizzas</h3>
+  <ul class="list-group">
+    @for (pizza of pizzasList(); track pizza.id) {
+      <li class="list-group-item" [class.bg-warning]="!pizza.vegetarian">
+        <mol-pizza-item [pizza]="pizza" (supprimer)="supprimerPizza($event)" />
+      </li>
+    }
+  </ul>
+</div>

@@ -1,0 +1,6 @@
+Num {{ indice() }} :
+-- Réf: {{ training().id }}
+-- {{ training().name }}
+-- <strong>Durée :</strong> {{ training().nbDays }} jour(s)
+-- <input type="checkbox" [checked]="training().isFree" disabled /> Gratuit
+<button (click)="onDelete()">Supprimer</button>
